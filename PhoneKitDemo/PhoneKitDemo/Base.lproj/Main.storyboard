@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1dO-fk-wB3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="BZK-0z-CSH">
+            <objects>
+                <viewController id="1dO-fk-wB3" customClass="ViewController" customModule="PhoneKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wYn-xb-JlX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hfX-wX-axX">
+                                <rect key="frame" x="20" y="203.5" width="335" height="60.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGf-bd-kwb">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="35q-Sj-AnL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojN-I3-fwY" customClass="PhoneTextField" customModule="PhoneKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="30.5" width="335" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="M1I-cG-ekq"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pGf-bd-kwb" firstAttribute="leading" secondItem="hfX-wX-axX" secondAttribute="leading" id="BSS-go-RXI"/>
+                                    <constraint firstItem="ojN-I3-fwY" firstAttribute="leading" secondItem="hfX-wX-axX" secondAttribute="leading" id="XyU-kW-egX"/>
+                                    <constraint firstAttribute="trailing" secondItem="ojN-I3-fwY" secondAttribute="trailing" id="fKj-J6-QU1"/>
+                                    <constraint firstAttribute="trailing" secondItem="pGf-bd-kwb" secondAttribute="trailing" id="ld6-Rn-9mX"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VDb-kj-Wrc">
+                                <rect key="frame" x="20" y="284" width="335" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elegant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXw-Rg-5y2">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="6FM-nJ-6s6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="35D-PJ-ABG" customClass="PhoneTextField" customModule="PhoneKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="30" width="335" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ots-jt-2vK"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WXw-Rg-5y2" secondAttribute="trailing" id="6BY-Mm-uIn"/>
+                                    <constraint firstAttribute="trailing" secondItem="35D-PJ-ABG" secondAttribute="trailing" id="AYn-tA-URV"/>
+                                    <constraint firstItem="35D-PJ-ABG" firstAttribute="leading" secondItem="VDb-kj-Wrc" secondAttribute="leading" id="Fut-gB-Aek"/>
+                                    <constraint firstItem="WXw-Rg-5y2" firstAttribute="leading" secondItem="VDb-kj-Wrc" secondAttribute="leading" id="iPN-Z2-JdW"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8qd-th-1yH">
+                                <rect key="frame" x="20" y="364" width="335" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0n-OS-cTv">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="jtm-e8-GW9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pky-Za-WnX" customClass="PhoneTextField" customModule="PhoneKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="30" width="335" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Tg1-CA-WfN"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pky-Za-WnX" secondAttribute="trailing" id="0Vb-Uf-bqZ"/>
+                                    <constraint firstItem="w0n-OS-cTv" firstAttribute="leading" secondItem="8qd-th-1yH" secondAttribute="leading" id="95I-eG-gxv"/>
+                                    <constraint firstItem="Pky-Za-WnX" firstAttribute="leading" secondItem="8qd-th-1yH" secondAttribute="leading" id="RDA-jy-20I"/>
+                                    <constraint firstAttribute="trailing" secondItem="w0n-OS-cTv" secondAttribute="trailing" id="dOT-bm-OCx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oso-g6-dzI" firstAttribute="trailing" secondItem="8qd-th-1yH" secondAttribute="trailing" constant="20" id="5h3-GG-L8l"/>
+                            <constraint firstItem="8qd-th-1yH" firstAttribute="leading" secondItem="Oso-g6-dzI" secondAttribute="leading" constant="20" id="8qs-pj-gP3"/>
+                            <constraint firstItem="Oso-g6-dzI" firstAttribute="trailing" secondItem="hfX-wX-axX" secondAttribute="trailing" constant="20" id="9K4-Na-Qof"/>
+                            <constraint firstItem="hfX-wX-axX" firstAttribute="centerY" secondItem="wYn-xb-JlX" secondAttribute="centerY" constant="-100" id="KYh-gt-d2U"/>
+                            <constraint firstItem="Oso-g6-dzI" firstAttribute="trailing" secondItem="VDb-kj-Wrc" secondAttribute="trailing" constant="20" id="aRj-hp-yp9"/>
+                            <constraint firstItem="VDb-kj-Wrc" firstAttribute="top" secondItem="hfX-wX-axX" secondAttribute="bottom" constant="20" id="eJp-KU-jfs"/>
+                            <constraint firstItem="VDb-kj-Wrc" firstAttribute="leading" secondItem="Oso-g6-dzI" secondAttribute="leading" constant="20" id="mi3-7O-Uvh"/>
+                            <constraint firstItem="hfX-wX-axX" firstAttribute="leading" secondItem="Oso-g6-dzI" secondAttribute="leading" constant="20" id="pQI-Yo-lGh"/>
+                            <constraint firstItem="8qd-th-1yH" firstAttribute="top" secondItem="VDb-kj-Wrc" secondAttribute="bottom" constant="20" id="zL1-9e-ScV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oso-g6-dzI"/>
+                    </view>
+                    <connections>
+                        <outlet property="customTextField" destination="Pky-Za-WnX" id="TnC-TG-8Ys"/>
+                        <outlet property="elegantTextField" destination="35D-PJ-ABG" id="84W-qh-Yb7"/>
+                        <outlet property="numbersTextField" destination="ojN-I3-fwY" id="uGG-IW-BnA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ONb-tE-K2B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="152"/>
+        </scene>
+    </scenes>
+</document>
